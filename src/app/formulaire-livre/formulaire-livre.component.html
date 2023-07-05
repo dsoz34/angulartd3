@@ -1,0 +1,22 @@
+
+
+
+    <form [formGroup]="livreForm">
+
+        <!--
+        <label for="id">Id :</label>
+        <input type="text" formControlName="isbnlivre">
+-->
+
+        <label for="nom">titre : </label>
+        <input type="text" formControlName="titre">
+        <label for="prenom">auteur : </label>
+        <input type="text" formControlName="auteur">
+        <label for="datePublication">datePublication : </label>
+        <input type="date" formControlName="datePublication">
+
+
+            <input type="submit"  (click)="saveLivre()"  value="Envoyer">
+  
+    
+    </form>

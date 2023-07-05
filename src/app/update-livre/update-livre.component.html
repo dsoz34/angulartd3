@@ -1,0 +1,27 @@
+<p>update-livre works!</p>
+
+
+<div *ngIf="livreForm">
+
+<form [formGroup]="livreForm">
+
+    
+    
+    <input type="hidden" formControlName="isbnlivre">
+
+
+    <label for="nom">titre : </label>
+    <input type="text" formControlName="titre">
+    <label for="prenom">auteur : </label>
+    <input type="text" formControlName="auteur">
+    <label for="datePublication">datePublication : </label>
+    <input type="date" formControlName="datePublication">
+
+
+        <input type="submit"  (click)="updateLivre()"  value="Envoyer">
+
+
+</form>
+
+
+</div>

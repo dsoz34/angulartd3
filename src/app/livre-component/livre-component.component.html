@@ -1,0 +1,23 @@
+<p>livre-component works!</p>
+
+<table>
+
+<tr>
+    <th>isbnlivre</th>
+    <th>titre</th>
+    <th>auteur</th>
+    <th>datePublication</th>
+    <th>actions</th>
+</tr>
+
+<tr *ngFor="let livre of listeL | async">
+    <td>{{livre.isbnlivre}} </td>
+    <td>{{livre.titre}} </td>
+    <td>{{livre.auteur}} </td>
+    <td>{{livre.datePublication}} </td>
+    <td><button (click)="deleteLivre(livre.isbnlivre)"> Delete</button>
+        <button (click)="updateLivre(livre.isbnlivre)"> modifier</button></td>
+</tr>
+
+
+</table>
